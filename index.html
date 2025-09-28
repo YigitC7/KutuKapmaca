@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kutu Kapmaca</title>
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #f3f4f6;
+    position: relative; /* referans çerçeve */
+    background: rgb(149, 180, 241);
+
+  display: flex;
+  justify-content: center; /* yatay ortalama */
+  align-items: center;    /* dikey ortalama */
+  }
+
+  .kare {
+    position: absolute; /* serbest konumlandırma */
+    width: 50px;
+    height: 50px;
+    background: rgb(211, 22, 22);
+
+    /* Konum buradan ayarlanır */
+    top: 150px;   /* dikey */
+    left: 200px;  /* yatay */
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 8px;
+  }
+  #kare {
+      position: absolute; /* veya relative */
+  }
+
+  .kutu {
+    position: absolute; /* serbest konumlandırma */
+    width: 50px;
+    height: 50px;
+    background: rgb(174, 88, 8);
+
+    /* Konum buradan ayarlanır */
+    top: 150px;   /* dikey */
+    left: 200px;  /* yatay */
+  }
+  #kutu {
+      position: absolute; /* veya relative */
+  }
+
+p {
+  position: absolute; /* Sayfa üzerinde konumlandırma için */
+  top: 0;            /* Üstten sıfır */
+  right: 0;          /* Sağdan sıfır */
+  color: white;      /* Yazı rengi beyaz */
+  margin: 10px;      /* Kenarlardan biraz boşluk */
+  font-size: 50px;   /* Yazı boyutu isteğe göre */
+}
+  </style>
+</head>
+<body id="BodyTag">
+    <div class="kare" id="kare"></div>
+    <script src="code.js"></script>
+    <p id="puanEtiketi">Puan: 0</p>
+
+</body>
+</html>
